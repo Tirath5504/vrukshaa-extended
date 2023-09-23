@@ -23,6 +23,7 @@ def newPost( data : Item):
     except Exception as e:
     # Code to handle the exception
         print(f"An exception of type {type(e).__name__} occurred: {e}")
+        print(e)
 
   
 
