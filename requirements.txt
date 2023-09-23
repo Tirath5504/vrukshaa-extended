@@ -4,6 +4,5 @@ requests
 numpy
 pillow
 tensorflow 
-io
 uvicorn
 pydantic
