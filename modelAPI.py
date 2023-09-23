@@ -14,11 +14,16 @@ app = FastAPI()
 
 @app.post('/post')
 def newPost( data : Item):
-    input_image = url_to_img(data.img)
-    processed_image = process(input_image)
-    crop = crop_predict(processed_image)
-    disease = disease_predict(processed_image, crop)
-    return [crop,disease]
+    try:
+        input_image = url_to_img(data.img)
+        processed_image = process(input_image)
+        crop = crop_predict(processed_image)
+        disease = disease_predict(processed_image, crop)
+        return [crop,disease]
+    except Exception as e:
+    # Code to handle the exception
+        print(f"An exception of type {type(e).__name__} occurred: {e}")
+
   
 
 def url_to_img(image_url):
