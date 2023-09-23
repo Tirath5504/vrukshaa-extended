@@ -4,3 +4,8 @@ crop_model.keras filter=lfs diff=lfs merge=lfs -text
 potato_model.keras filter=lfs diff=lfs merge=lfs -text
 wheat_model.keras filter=lfs diff=lfs merge=lfs -text
 rice_model.keras filter=lfs diff=lfs merge=lfs -text
+corn_model.h5 filter=lfs diff=lfs merge=lfs -text
+crop_model.h5 filter=lfs diff=lfs merge=lfs -text
+potato_model.h5 filter=lfs diff=lfs merge=lfs -text
+rice_model.h5 filter=lfs diff=lfs merge=lfs -text
+wheat_model.h5 filter=lfs diff=lfs merge=lfs -text

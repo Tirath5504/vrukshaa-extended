@@ -40,7 +40,7 @@ def process(input_image):
 def crop_predict(processed_image):
 
     # Load the trained model
-    model = keras.models.load_model('crop_model.keras')
+    model = keras.models.load_model('crop_model.h5')
     # Make predictions
     predictions = model.predict(processed_image)
     # Process the predictions (e.g., get class labels)
@@ -53,25 +53,25 @@ def disease_predict(processed_image, crop):
 
     if crop == "Potato":
         # Load the trained model
-        model = keras.models.load_model('potato_model.keras')
+        model = keras.models.load_model('potato_model.h5')
         # Process the predictions (e.g., get class labels)
         class_labels = ["Potato_Early_Blight", "Potato_Healthy", "Potato_Late_Blight"] 
     
     elif crop == "Corn":
         # Load the trained model
-        model = keras.models.load_model('corn_model.keras')
+        model = keras.models.load_model('corn_model.h5')
         # Process the predictions (e.g., get class labels)
         class_labels = ["Corn_Common_Rust", "Corn_Gray_Leaf_Spot", "Corn_Healthy", "Corn_Northern_Leaf_Blight"] 
 
     elif crop == "Rice":
         # Load the trained model
-        model = keras.models.load_model('rice_model.keras')
+        model = keras.models.load_model('rice_model.h5')
         # Process the predictions (e.g., get class labels)
         class_labels = ["Rice_Brown_Spot", "Rice_Healthy", "Rice_Leaf_Blast", "Rice_Neck_Blast"] 
 
     elif crop == "Wheat":
         # Load the trained model
-        model = keras.models.load_model('wheat_model.keras')
+        model = keras.models.load_model('wheat_model.h5')
         # Process the predictions (e.g., get class labels)
         class_labels = ["Wheat_Brown_Rust", "Wheat_Healthy", "Wheat_Yellow_Rust"]
 
