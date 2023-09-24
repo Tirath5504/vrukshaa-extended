@@ -1,8 +1,6 @@
 keras
-fastapi
 requests
 numpy
 pillow
 tensorflow 
-uvicorn
-pydantic
+flask
